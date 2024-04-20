@@ -2,7 +2,7 @@ pipeline {
   agent any
 
   environment {
-    TEST_SERVER_IP = '99.79.79.246' // Replace with public IP of test server after spinning up
+    TEST_SERVER_IP = '35.182.74.38' // Replace with public IP of test server after spinning up
     DOCKERHUB_REPO = 'kennethalt99' // Replace with dockerhub username.
     APP_IMAGE_NAME = 'magic-cards'
     TAG = "${BUILD_ID}"
