@@ -59,6 +59,12 @@ resource "aws_instance" "jenkins_server" {
   user_data = <<-EOF
               #!/bin/bash
               sudo apt-get update
+              sudo apt-get install -y docker.io
+              sudo systemctl enable docker
+              sudo systemctl start docker
+              sudo usermod -aG docker ${var.ec2_user}
+              sudo chmod 666 /var/run/docker.sock
+              sudo apt-get update
               sudo apt-get install -y fontconfig openjdk-17-jre
               sudo apt-get install -y wget
               sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
