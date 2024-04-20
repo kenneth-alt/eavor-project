@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Gumela;
+  src: local(Gumela Regular),
+    url('../src/assets/fonts/Gumela\ Regular.otf') format('opentype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gumela';
+  font-weight: normal;
+}
+
+body {
+  background: #3f3f46;
+  z-index: -1;
+}

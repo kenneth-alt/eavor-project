@@ -1,0 +1,8 @@
+{
+  "preset": "ts-jest",
+  "testEnvironment": "jsdom",
+  "testMatch": ["<rootDir>/src/**/__tests__/**/*.test.ts?(x)"],
+  "moduleNameMapper": {
+    "\\.(jpg|jpeg|png|gif|svg)$": "<rootDir>/src/__tests__/__mocks__/fileMock.js"
+  }
+}
