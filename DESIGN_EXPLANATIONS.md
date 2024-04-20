@@ -69,7 +69,7 @@ Define Pipeline script from Git SCM, supplying the GitHub URL https://github.com
 ### 4. Set up Git Integration.
 
 A GitHub webhook for the jenkins can be set up on the GitHub repo by using the payload URL in the following format:
-https:<jenkins_server_ip>:<jenkins_port>/Github_webhook/
+https:<jenkins_server_ip>:<jenkins_port>/github-webhook/
 
 This setup would enable jenkins to run a job with the latest changes every time new code is pushed to the github repo.
 
