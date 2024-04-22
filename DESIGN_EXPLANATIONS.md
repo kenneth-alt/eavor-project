@@ -7,7 +7,7 @@
 Terraform IaC code is included in the terraform directory within the repo, for spinning 2 different environments (EC2 instances), along with the necessary networking and port considerations:
 
 1. Jenkins server
-   The Jenkins server is installed with Jenkins and it's dependencies during provision, using an included userdata, Once provisioned the server automatically has Jenkins running on it and ready to be used.
+   The Jenkins server is installed with Jenkins and it's dependencies during provisioning, using an included userdata, Once provisioned the server automatically has Jenkins running on it and ready to be used.
 
 2. Test Environment:
    The test server also has a userdata script to installed docker on it during provisioning, this way once provision, Docker is up and running and we can deploy our application ready to be tested.
